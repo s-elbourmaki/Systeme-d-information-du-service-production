@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'motion/react'
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { Sidebar } from './components/Sidebar'
 import { CoverPage } from './components/CoverPage'
 import DashboardPage from './pages/DashboardPage'
@@ -21,6 +22,7 @@ export default function App() {
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--gray-50)' }}>
+      <Analytics />
       <AnimatePresence>
         {showCover && <CoverPage />}
       </AnimatePresence>
