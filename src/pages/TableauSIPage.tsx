@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { tableauProcessus, processColors, processLabels } from '../data/mockData'
-import { TableProperties, ChevronDown, ChevronUp } from 'lucide-react'
+import { TableProperties } from 'lucide-react'
 
 export default function TableauSIPage() {
   const [activeProcess, setActiveProcess] = useState<string | null>('All')
